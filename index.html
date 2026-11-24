@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maltu App Store — Android Apps by Hari Pandya</title>
+  <meta name="description" content="Maltu App Store — download free Android apps built by Hari Pandya: music player, video to audio converter, video to images and more. Download via email." />
+  <meta name="theme-color" content="#08080c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Maltu App Store — home">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">maltu<span class="logo-dot">.store</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#apps" class="nav-link">Apps</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7Z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="pill"><span class="dot"></span> Free Android apps — built by Hari Pandya</p>
+          <h1>My own <span class="grad">App Store</span>.<br />Download via email.</h1>
+          <p class="lead">
+            Music, video converters, image tools and more — all built in Android Studio.
+            Enter your email once and download any app for free.
+          </p>
+          <div class="cta">
+            <a href="#apps" class="btn btn-primary">Browse apps
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#about" class="btn btn-ghost">About</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH + CATEGORIES -->
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">01 — Apps</p>
+          <h2 class="section-title">All apps</h2>
+          <p class="section-sub">Search, filter by category, then download with your email.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="search" placeholder="Search apps..." aria-label="Search apps" />
+          </div>
+          <div class="categories" id="categories" role="tablist" aria-label="Categories">
+            <button class="cat-btn active" data-cat="all">All</button>
+            <button class="cat-btn" data-cat="music">Music</button>
+            <button class="cat-btn" data-cat="video">Video</button>
+            <button class="cat-btn" data-cat="image">Image</button>
+            <button class="cat-btn" data-cat="utility">Utility</button>
+          </div>
+        </div>
+
+        <div class="apps-grid" id="apps-grid"></div>
+        <p class="empty" id="empty" hidden>No apps found.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-panel reveal">
+          <div>
+            <p class="label">02 — About</p>
+            <h2 class="section-title">Built by Hari Pandya</h2>
+            <p>
+              Every app here is designed and developed by me in Android Studio — free to
+              download, no ads, no tracking. Just enter your email and get the APK.
+            </p>
+            <p>
+              Have a feature request or found a bug? Write to
+              <a href="mailto:pandyaherry11@gmail.com">pandyaherry11@gmail.com</a>.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="stat-num" id="app-count">0</span><span class="stat-suffix">+</span><p>Apps</p></div>
+            <div class="stat"><span class="stat-num">100</span><span class="stat-suffix">%</span><p>Free</p></div>
+            <div class="stat"><span class="stat-num">0</span><span class="stat-suffix"> ads</span><p>Privacy first</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="label">03 — Contact</p>
+            <h2 class="section-title">Get in touch</h2>
+            <p>Questions, feedback or app requests — my inbox is always open.</p>
+            <a class="mail-link" href="mailto:pandyaherry11@gmail.com">pandyaherry11@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year">2026</span> Hari Pandya · Maltu App Store. Built from scratch.</p>
+    </div>
+  </footer>
+
+  <!-- DOWNLOAD MODAL -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modal-title">Download app</h3>
+      <p class="modal-app" id="modal-app"></p>
+      <p class="modal-hint">Enter your email to download. We'll never spam you.</p>
+      <form id="download-form" novalidate>
+        <input type="email" id="modal-email" placeholder="you@example.com" required autocomplete="email" />
+        <button type="submit" class="btn btn-primary btn-block">Download
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M6.5 10.5 12 16l5.5-5.5"/><path d="M4 20h16"/></svg>
+        </button>
+      </form>
+      <p class="form-hint" id="modal-status"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
