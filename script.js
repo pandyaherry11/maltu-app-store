@@ -1,6 +1,16 @@
 /* ================= Maltu App Store ================= */
 const APPS = [
   {
+    id: "family-map",
+    name: "Family Map",
+    cat: "utility",
+    icon: "📍",
+    desc: "Share live location with your family. Join with a family code or mobile number. Up to 7 members, rename any slot.",
+    version: "1.0.0",
+    size: "101 KB",
+    url: "assets/apps/family-map.apk"
+  },
+  {
     id: "maltu-tools",
     name: "Maltu Tools",
     cat: "utility",
