@@ -1,6 +1,16 @@
 /* ================= Maltu App Store ================= */
 const APPS = [
   {
+    id: "maltu-tools",
+    name: "Maltu Tools",
+    cat: "utility",
+    icon: "🛠️",
+    desc: "All-in-one toolbox: music player, video to audio, video to images and more. Built in Android Studio.",
+    version: "1.0.0",
+    size: "13 MB",
+    url: "assets/apps/maltu-tools.apk"
+  },
+  {
     id: "music-player",
     name: "Maltu Music Player",
     cat: "music",
